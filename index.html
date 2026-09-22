@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cirta Électronique | Constantine</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Cirta Électronique | حلول ذكية وصيانة الشاشات بقسنطينة</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
             background-color: #0b132b;
@@ -19,69 +18,49 @@
         }
         header {
             background: linear-gradient(135deg, #1c2541, #0b132b);
-            padding: 2.5rem 1rem;
+            padding: 20px;
             text-align: center;
-            border-bottom: 3px solid #3a506b;
+            border-bottom: 3px solid #48cae4;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid #48cae4;
         }
         header h1 {
-            font-size: 2.5rem;
-            color: #6fffe9;
-            margin-bottom: 0.5rem;
+            font-size: 26px;
+            color: #48cae4;
+            margin-bottom: 5px;
         }
         header p {
-            font-size: 1.1rem;
-            color: #b7ebd9;
+            font-size: 14px;
+            color: #94a3b8;
         }
         .container {
             max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
+            margin: auto;
+            padding: 20px;
         }
-        section {
-            margin-bottom: 3rem;
+        .section-title {
+            text-align: center;
+            font-size: 22px;
+            margin: 35px 0 20px;
+            color: #48cae4;
+            border-bottom: 2px dashed #1d3557;
+            padding-bottom: 10px;
         }
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: #6fffe9;
-            border-left: 4px solid #6fffe9;
-            padding-left: 10px;
-        }
-        .about-technician {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            align-items: center;
-            background-color: #1c2541;
-            padding: 2rem;
-            border-radius: 15px;
-            border: 1px solid #3a506b;
-            margin-bottom: 3rem;
-        }
-        .about-technician img {
-            max-width: 280px;
-            border-radius: 10px;
-            object-fit: cover;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        }
-        .about-text h3 {
-            color: #6fffe9;
-            font-size: 1.5rem;
-            margin-bottom: 0.8rem;
-        }
-        .about-text p {
-            color: #a0aec0;
-            margin-bottom: 1rem;
-        }
-        .grid {
+        .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
         .card {
             background-color: #1c2541;
             border-radius: 12px;
-            padding: 1.5rem;
+            overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             border: 1px solid #3a506b;
             transition: transform 0.3s ease;
@@ -89,110 +68,144 @@
         .card:hover {
             transform: translateY(-5px);
         }
-        .card h3 {
-            color: #ffffff;
-            margin-bottom: 0.8rem;
-            font-size: 1.3rem;
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
-        .card p {
-            color: #a0aec0;
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
+        .card-content {
+            padding: 20px;
         }
-        .btn-whatsapp {
-            display: inline-block;
+        .card-content h3 {
+            font-size: 20px;
+            color: #ffb703;
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            font-size: 14px;
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2ec4b6;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
             background-color: #25d366;
             color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            text-align: center;
-            width: 100%;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+            font-size: 16px;
             transition: background 0.3s;
         }
-        .btn-whatsapp:hover {
+        .btn:hover {
             background-color: #20ba5a;
         }
         footer {
-            background-color: #0b132b;
             text-align: center;
-            padding: 2rem;
-            border-top: 1px solid #3a506b;
-            color: #8892b0;
+            padding: 25px;
+            background-color: #0b132b;
+            color: #94a3b8;
+            margin-top: 40px;
+            border-top: 1px solid #1c2541;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
     <header>
+        <!-- ضع اسم صورة الشعار التي رفعتها هنا -->
+        <img src="logo.png" alt="Cirta Électronique Logo">
         <h1>Cirta Électronique</h1>
-        <p>Électronique de proximité & Solutions intelligentes à Constantine</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #ffeb3b;">📍 Le Faubourg, en face de la poste, Constantine</p>
+        <p>إلكترونيات القرب، بيع الأجهزة الذكية، وخدمات الصيانة والتركيب الاحترافية بقسنطينة (الفوبور)</p>
     </header>
 
     <div class="container">
         
-        <!-- Section Présentation / Technicien à Domicile -->
-        <div class="about-technician">
-            <div class="about-text">
-                <h3>Votre Technicien à Domicile</h3>
-                <p>Équipe spécialisée dans la vente, la réparation de tous types d'écrans intelligents, et la fourniture de solutions numériques avancées. Nous assurons un service rapide avec déplacement direct à domicile ou en atelier à Constantine.</p>
-                <p style="color: #6fffe9; font-weight: bold;">📞 Contact direct: 0555873534</p>
+        <!-- قسم المنتجات -->
+        <h2 class="section-title">الأجهزة الذكية والريسيفرات المتوفرة</h2>
+        <div class="card-grid">
+            
+            <!-- منتج 1 -->
+            <div class="card">
+                <!-- اسم صورة ريسيفر D20 -->
+                <img src="d20.jpg" alt="Icône D20">
+                <div class="card-content">
+                    <h3>Icône D20 (Récepteur)</h3>
+                    <p>ريسيفر فضائي ذكي، نظام سريع وسهل الاستعمال، قنوات رياضية وعالمية، اتصال Wi-Fi مدمج.</p>
+                    <div class="price">السعر: 4500 دج</div>
+                    <a href="https://wa.me/213555873534?text=السلام%20عليكم،%20أريد%20طلب%20ريسيفر%20Icône%20D20" class="btn">طلب عبر واتساب</a>
+                </div>
             </div>
+
+            <!-- منتج 2 -->
+            <div class="card">
+                <!-- اسم صورة ستيك S-One -->
+                <img src="s-one.jpg" alt="Icône S-One Stick">
+                <div class="card-content">
+                    <h3>Icône S-One (TV Stick)</h3>
+                    <p>تجربة ترفيه ذكية بحجم صغير وأداء كبير، نظام أندرويد، دقة 4K HDR10، تخزين 16GB و RAM 2GB.</p>
+                    <div class="price">متوفر الآن</div>
+                    <a href="https://wa.me/213555873534?text=السلام%20عليكم،%20أريد%20استفسار%20حول%20Icône%20S-One" class="btn">طلب عبر واتساب</a>
+                </div>
+            </div>
+
+            <!-- منتج 3 -->
+            <div class="card">
+                <!-- اسم صورة البوكس G-Two -->
+                <img src="g-two.jpg" alt="Icône G-Two Box">
+                <div class="card-content">
+                    <h3>Icône G-Two (TV Box)</h3>
+                    <p>صندوق ترفيهي ذكي متطور لعرض أحسن القنوات والبث المباشر بجودة عالية ودعم شامل للتطبيقات.</p>
+                    <div class="price">متوفر الآن</div>
+                    <a href="https://wa.me/213555873534?text=السلام%20عليكم،%20أريد%20طلب%20Icône%20G-Two" class="btn">طلب عبر واتساب</a>
+                </div>
+            </div>
+
         </div>
 
-        <!-- Section Produits -->
-        <section>
-            <h2>Nos Produits Disponibles (Vente)</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Icône S-One (Stick TV)</h3>
-                    <p>Expérience intelligente 4K HDR10, Android OS, Wi-Fi 6, 2GB RAM & 16GB Storage.</p>
-                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20suis%20intéressé%20par%20l'appareil%20Icône%20S-One" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
-                </div>
-                <div class="card">
-                    <h3>Icône D20 Mini (TV Box)</h3>
-                    <p>Processeur Sunplus, 1GB RAM, Time Shift, support des abonnements mondiaux et sportifs.</p>
-                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20suis%20intéressé%20par%20l'appareil%20Icône%20D20%20Mini" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
-                </div>
-                <div class="card">
-                    <h3>Icône Click & TV Box Divers</h3>
-                    <p>Large gamme de boîtiers TV et accessoires numériques performants pour votre maison.</p>
-                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20souhaite%20avoir%20plus%20d'infos%20sur%20les%20produits%20Icône" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
+        <!-- قسم الخدمات والصيانة -->
+        <h2 class="section-title">خدمات الصيانة والتقني المتنقل</h2>
+        <div class="card-grid">
+            
+            <!-- خدمة 1 -->
+            <div class="card">
+                <!-- اسم صورة الصيانة -->
+                <img src="repair.jpg" alt="صيانة التلفاز">
+                <div class="card-content">
+                    <h3>إصلاح أعطال التلفاز وشاشات LED / QLED</h3>
+                    <p>إصلاح وتغيير اللوحة الأم (Carte Mère)، وحدات التغذية الكهربائية، ومعالجة أعطال الإضاءة الخلفية باحترافية ودقة.</p>
+                    <a href="https://wa.me/213555873534?text=السلام%20عليكم،%20لدي%20مشكل%20في%20التلفاز%20وأريد%20خدمة%20الصيانة" class="btn">احجز خدمة الصيانة</a>
                 </div>
             </div>
-        </section>
 
-        <!-- Section Services -->
-        <section>
-            <h2>Nos Services & Réparation</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Réparation TV & Écrans</h3>
-                    <p>Diagnostic précis, réparation de cartes mères, rétroéclairage LED, et écrans géants.</p>
-                    <a href="https://wa.me/213555873534?text=Bonjour,%20j'ai%20besoin%20d'une%20réparation%20TV" class="btn-whatsapp" target="_blank">Prendre Rendez-vous</a>
-                </div>
-                <div class="card">
-                    <h3>Technicien à Domicile</h3>
-                    <p>Déplacement rapide à domicile pour le dépannage, l'installation et le support technique.</p>
-                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20veux%20demander%20un%20technicien%20à%20domicile" class="btn-whatsapp" target="_blank">Demander le service</a>
-                </div>
-                <div class="card">
-                    <h3>Support Mural & Applications</h3>
-                    <p>Installation professionnelle de supports muraux et configuration des applications mondiales & premium.</p>
-                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20veux%20installer%20un%20support%20mural" class="btn-whatsapp" target="_blank">Réserver</a>
+            <!-- خدمة 2 -->
+            <div class="card">
+                <!-- اسم صورة التقني المتنقل -->
+                <img src="technician.jpg" alt="التقني المتنقل">
+                <div class="card-content">
+                    <h3>خدمة التقني المتنقل في المنزل</h3>
+                    <p>تثبيت وتركيب حوامل التلفاز (Supports muraux) باحترافية عالية، وخدمة البيع والتركيب المباشر للمنتجات بالمنزل في قسنطينة وضواحيها.</p>
+                    <a href="https://wa.me/213555873534?text=السلام%20عليكم،%20أريد%20طلب%20خدمة%20التقني%20المتنقل" class="btn">طلب تقني منزلي</a>
                 </div>
             </div>
-        </section>
+
+        </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Cirta Électronique - Constantine. Tous droits réservés.</p>
+        <p>&copy; 2026 Cirta Électronique - Constantine (Le Faubourg). جميع الحقوق محفوظة.</p>
     </footer>
 
 </body>
-  </html>
-  
+            </html>
+            
