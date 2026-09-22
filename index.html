@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cirta Électronique | Constantine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #0b132b;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1c2541, #0b132b);
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 3px solid #3a506b;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #6fffe9;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #b7ebd9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #6fffe9;
+            border-left: 4px solid #6fffe9;
+            padding-left: 10px;
+        }
+        .about-technician {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            background-color: #1c2541;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #3a506b;
+            margin-bottom: 3rem;
+        }
+        .about-technician img {
+            max-width: 280px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .about-text h3 {
+            color: #6fffe9;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .about-text p {
+            color: #a0aec0;
+            margin-bottom: 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background-color: #1c2541;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid #3a506b;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        .card p {
+            color: #a0aec0;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+            transition: background 0.3s;
+        }
+        .btn-whatsapp:hover {
+            background-color: #20ba5a;
+        }
+        footer {
+            background-color: #0b132b;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #3a506b;
+            color: #8892b0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cirta Électronique</h1>
+        <p>Électronique de proximité & Solutions intelligentes à Constantine</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #ffeb3b;">📍 Le Faubourg, en face de la poste, Constantine</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Section Présentation / Technicien à Domicile -->
+        <div class="about-technician">
+            <div class="about-text">
+                <h3>Votre Technicien à Domicile</h3>
+                <p>Équipe spécialisée dans la vente, la réparation de tous types d'écrans intelligents, et la fourniture de solutions numériques avancées. Nous assurons un service rapide avec déplacement direct à domicile ou en atelier à Constantine.</p>
+                <p style="color: #6fffe9; font-weight: bold;">📞 Contact direct: 0555873534</p>
+            </div>
+        </div>
+
+        <!-- Section Produits -->
+        <section>
+            <h2>Nos Produits Disponibles (Vente)</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Icône S-One (Stick TV)</h3>
+                    <p>Expérience intelligente 4K HDR10, Android OS, Wi-Fi 6, 2GB RAM & 16GB Storage.</p>
+                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20suis%20intéressé%20par%20l'appareil%20Icône%20S-One" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
+                </div>
+                <div class="card">
+                    <h3>Icône D20 Mini (TV Box)</h3>
+                    <p>Processeur Sunplus, 1GB RAM, Time Shift, support des abonnements mondiaux et sportifs.</p>
+                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20suis%20intéressé%20par%20l'appareil%20Icône%20D20%20Mini" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
+                </div>
+                <div class="card">
+                    <h3>Icône Click & TV Box Divers</h3>
+                    <p>Large gamme de boîtiers TV et accessoires numériques performants pour votre maison.</p>
+                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20souhaite%20avoir%20plus%20d'infos%20sur%20les%20produits%20Icône" class="btn-whatsapp" target="_blank">Commander via WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section>
+            <h2>Nos Services & Réparation</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Réparation TV & Écrans</h3>
+                    <p>Diagnostic précis, réparation de cartes mères, rétroéclairage LED, et écrans géants.</p>
+                    <a href="https://wa.me/213555873534?text=Bonjour,%20j'ai%20besoin%20d'une%20réparation%20TV" class="btn-whatsapp" target="_blank">Prendre Rendez-vous</a>
+                </div>
+                <div class="card">
+                    <h3>Technicien à Domicile</h3>
+                    <p>Déplacement rapide à domicile pour le dépannage, l'installation et le support technique.</p>
+                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20veux%20demander%20un%20technicien%20à%20domicile" class="btn-whatsapp" target="_blank">Demander le service</a>
+                </div>
+                <div class="card">
+                    <h3>Support Mural & Applications</h3>
+                    <p>Installation professionnelle de supports muraux et configuration des applications mondiales & premium.</p>
+                    <a href="https://wa.me/213555873534?text=Bonjour,%20je%20veux%20installer%20un%20support%20mural" class="btn-whatsapp" target="_blank">Réserver</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Cirta Électronique - Constantine. Tous droits réservés.</p>
+    </footer>
+
+</body>
+  </html>
+  
